@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/output.css">
+
+
+
+    <title>Dev Burguer</title>
+</head>
+
+<body>
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="assets/hamb-1.png" alt="Logo DevBurguer"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Dev Burguer</h1>
+
+            <span class="text-white font-medium">Rua dev 10, Campo Grande - MS</span>
+
+            <div class="bg-green-600 px-4 py-1 mt-5 rounded-lg" id="data-span">
+                <span class="text-white font-medium">Seg á Dom 18:00 às 00:00</span>
+            </div>
+        </div>
+    </header>
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça nosso menu
+    </h2>
+
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-3 gap-7 md:gap-10 mx-auto max-w-7x1 px-2 mb-16">
+
+            <div class="flex gap-2">
+                <img src="./assets/jeremias.png" alt=""
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div>
+                    <p class="font-bold">Jeremias</p>
+                    <p class="text-sm max-w-96">Pão de brioche, blend bovino 160g, maionese da casa, provolone e Bacon.
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 31.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Jeremias"
+                            data-price="18.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/salomao.png" alt=""
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Salomão</p>
+                    <p class="text-sm max-w-96">>Pão com gergelim, 2 carnes tradicionais, 2 queijos, presunto, ovo,
+                        bacon, e salada.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 28.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Salomão" data-price="28.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/rute.png" alt=""
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Rute</p>
+                    <p class="text-sm max-w-96">Pão de brioche, blend de 160g, cheddar, creme de cheddar, farofa de
+                        bacon, cebola crispy e salada.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 35.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Rute" data-price="35.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/debora.png" alt=""
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Débora</p>
+                    <p class="text-sm max-w-96">Pão australiano, blend bovino 160g, fatia de cheddar, creme de cheddar,
+                        cebola caramelizada e Bacon.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 35</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Débora" data-price="35">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="./assets/miria.png" alt=""
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Miriã</p>
+                    <p class="text-sm max-w-96">Pão de brioche, 2 blends bovino de 160g,(cada) 2 fatias de cheddar,
+                        creme de cheddar, farofa de bacon..</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 40</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Miriã" data-price="40">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="./assets/davi.png" alt=""
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Davi</p>
+                    <p class="text-sm max-w-96">Pão de broche, blend de frango 160g, catupiry, farofa de bacon e cebola
+                        crispy.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 29</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Davi" data-price="29">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="./assets/debora.png" alt=""
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Raabe</p>
+                    <p class="text-sm max-w-96">Pão de brioche, blend bovino 160g, cebola caramelizada,ketchup de
+                        goiabada e creme de gorgonzola.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 34</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Raabe" data-price="34">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="./assets/debora.png" alt=""
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Ester</p>
+                    <p class="text-sm max-w-96">Pão com gergelim, 2 carnes tradicionais, 2 queijos,cebola empanada,
+                        bacon e salada.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 38</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Ester" data-price="38">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2">
+                <img src="./assets/sansao.png" alt=""
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Sansão</p>
+                    <p class="text-sm max-w-96">Pão australiano,blend bovino 160g, muçarela empanada no parmesão, geleia
+                        de pimenta e Bacon.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 42</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Sansão" data-price="42">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+
+        <!--  
+          <div class="mx-auto max-w-7xl px-2 my-2 flex justify-center"> 
+            <h2 class="font-bold text-3xl">
+                Bebidas
+            </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7x1 px-2 mb-16">
+            <div class="flex gap-2">
+                <img src="./assets/refri-1.png" alt=""
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Coca Lata</p>
+                    <p class="text-sm">Cheese Burger Duplo Pão levinho de fermentação natural da Trigou, burger 160g,
+                        queijo
+                        prato e maionese da casa</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca Lata" data-price="6">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/refri-2.png" alt=""
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+
+                <div>
+                    <p class="font-bold">Guarana Lata</p>
+                    <p class="text-sm">Cheese Burger Duplo Pão levinho de fermentação natural da Trigou, burger 160g,
+                        queijo
+                        prato e maionese da casa</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guarana Lata"
+                            data-price="6">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+
+        <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden"
+            id="cart-modal">
+            <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+                <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+                <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+                <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+                <p class="font-bold mt-4">Endereço de entrega:</p>
+
+                <input type="text" placeholder="Digite seu Endereço " id="address"
+                    class="w-full border-2 p-1 rounded my-1">
+
+                <p class="text-red-500 hidden" id="address-warn">Digite seu Endereço completo</p>
+
+                <div class="flex items-center justify-between mt-5 w-full">
+                    <button id="close-modal-btn">Fechar</button>
+                    <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar
+                        pedido</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+            <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+                (<span id="cart-count">0</span>)
+                Veja meu carrinho
+            </button>
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </footer>
+
+
+        <script src="/script.js"></script>
+</body>
+
+</html>
